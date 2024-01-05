@@ -344,15 +344,3 @@ for train_ix, test_ix in cv_outer.split(X,y):
 
 #notify about end of Nested CV
 winsound.Beep(freq, duration)
-#%% TODO: Ich muss im custom scorer genauso wie unten die rejected klasses
-#ignorieren, sonst habe ich einen Bias bzgl. rejection
-
-'''
-DELETE
-filtered_indices = [i for i, pred in enumerate(res_y_pred[0]) if pred != 9]
-y_true_filtered_test = [res_y_true_filtered[0][i] for i in filtered_indices]
-y_pred_filtered_test = [res_y_pred[0][i] for i in filtered_indices]
-
-# Calculate the accuracy score for the filtered lists
-accuracy = accuracy_score(y_true_filtered_test, y_pred_filtered_test)
-'''
