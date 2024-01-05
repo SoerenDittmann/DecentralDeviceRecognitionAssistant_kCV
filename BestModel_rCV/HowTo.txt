@@ -1,0 +1,15 @@
+To run the code of the repeated cross validation with the best model previously defined via a nested cross validation please:
+
+1. Set up a new anaconda environment with the mentioned packages and versions in the text file best_model_env
+2. Start Spyder from the anaconda terminal with the above defined environment
+3. Download the Classification directory with helper functions
+4. Set the Spyder path to the path with the Classification env (this is necessary for helper functions)
+5. Verify under Tools, preferences, Python interpreter the correct path to the anaconda env or update path
+6. Run 1. cell to load all packages
+
+---- If you want to run the code on your own from scratch
+6a. Import sensor_dic_final_final.spydata file into Spyder and run code beginning from 2. cell
+
+---- If you want to import the final data 
+6b. Run cells defining the class HC2withReject(HIVECOTEV2) and def custom_precision (y_true, y_pred, threshold=0.2)
+7b. Import best_model_data.spydata
